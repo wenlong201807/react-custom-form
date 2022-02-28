@@ -1,11 +1,21 @@
 import React from 'react';
 // import logo from './logo.svg';
+// 全局引入
+import { Button, Calendar } from 'antd'
+// import 'antd/dist/antd.css';
+
+// 指定引入
+// import Button from 'antd/lib/button'
+// import 'antd/lib/button/style/index.css'
+// import Calendar from 'antd/lib/calendar'
+// import 'antd/lib/calendar/style/index.css'
+
 import FormCreate from './Form';
 import './App.css';
 
 function App({ form }) {
   // const [value, setValue] = useState('')
-  // console.log('value:', value)
+  // console.log('value:', value) 
   return (
     <div className="App">
       {/* <input value={value} onInput={e => setValue(e.target.value)} /> */}
@@ -49,6 +59,8 @@ function App({ form }) {
       >
         提交
       </button>
+      <Button>anniu</Button>
+      <Calendar></Calendar>
     </div>
   );
 }
